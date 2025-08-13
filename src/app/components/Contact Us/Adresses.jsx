@@ -4,13 +4,9 @@ import React from 'react';
 import { FaEnvelope, FaPhoneAlt, FaExternalLinkAlt } from 'react-icons/fa';
 import Form from './Form';
 import { motion } from 'framer-motion';
+import { tilt_neon } from '@/font';
 
 const locations = [
-    {
-        city: 'Harare',
-        address: '12807A0282024, Harare, ZW',
-        link: 'https://maps.google.com/?q=12807A0282024, Harare, ZW'
-    },
     {
         city: 'Indore',
         address:
@@ -18,6 +14,12 @@ const locations = [
         link: 'https://maps.google.com/?q=Office No. 203, Navneet Plaza, 5/2 Old Palasia, Indore',
         primary: true
     },
+    {
+        city: 'Harare',
+        address: '12807A0282024, Harare, ZW',
+        link: 'https://maps.google.com/?q=12807A0282024, Harare, ZW'
+    },
+    
     {
         city: 'Kingston Upon Thames',
         address: 'KT6 7DQ Tolworth Broadway, Kingston Upon Thames, GB',
@@ -33,7 +35,7 @@ const locations = [
 export default function Contact() {
     return (
         <div
-            className="relative bg-cover bg-center px-6 md:px-16 py-16 text-white"
+            className={`relative bg-cover bg-center px-6 md:px-16 py-16 text-white ${tilt_neon.className}`}
             style={{
                 backgroundImage: "url('/contactBackground.jpg')",
             }}
@@ -94,7 +96,6 @@ export default function Contact() {
                                     rel="noopener noreferrer"
                                     className="text-blue-400 flex items-center gap-1 text-sm hover:underline"
                                 >
-                                    Get directions <FaExternalLinkAlt size={11} />
                                 </a>
                             </motion.div>
                         ))}

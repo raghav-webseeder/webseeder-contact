@@ -3,18 +3,22 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaPaperPlane, FaEnvelope, FaBuilding, FaUser } from 'react-icons/fa';
+import { tilt_neon } from '@/font';
 
 const services = [
-    'Brand Strategy & Identity',
+    'SEO & Marketing',
     'Website Design & Development',
-    'Branding + Website',
+    'Website + SEO',
     'UX/UI Design',
     'Development',
     'eCommerce Design & Development',
     'Landing Page',
     'App Design & Development',
-    'Motion Design & Animation',
-    'Strategic Copywriting & Messaging',
+    'Software Development',
+    'Software Automation',
+    'CRM',
+    'ERP',
+    'HRMS',
     'Others',
 ];
 
@@ -39,7 +43,7 @@ export default function Form() {
 
     return (
         <div className="bg-[#f9f9f9] p-6 sm:p-10 rounded-xl shadow-md max-w-4xl mx-auto text-black" id='quote'>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-10 leading-snug text-gray-900">
+            <h2 className={`text-2xl md:text-3xl font-black mb-4 ${tilt_neon.className}`}>
                 Let's create something together
             </h2>
 
